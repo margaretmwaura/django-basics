@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<h5>This is a search view results view</h5>
+
+{% if object %}
+   <h1> The title is  {{ object.title }} and the id is {{ object.id }} </h1>
+   <p> {{ object.content }} </p>
+{% endif%}
+
+{% endblock content %}
